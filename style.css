@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.board {
+    position: relative;
+    width: 1024px;
+    height: 863px;
+    background: url('img/board.jpg') no-repeat;
+    margin: auto;
+}
+.medal {
+    width: 200px;
+    height: 200px;
+}
+
+.string {
+    color: yellow;
+    font-size: 100px;
+    position: absolute;
+    z-index: 100;
+    width:100%;
+	height:100px;
+    margin:60px auto;	
+}
+
+.winner {
+    font-weight: bold;
+}
+.out {
+    position: absolute;
+    bottom: 44%;
+    left: -220px;
+    color: rgb(83, 175, 19);
+    width: 300px;
+    min-height: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    
+}
+.win {
+    display: block;
+    margin: 30px auto;
+}
+form {
+    position: absolute;
+    bottom: 36%;
+    right: -220px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+form input {
+    background-color: rgb(152, 207, 113); 
+    /* border-color: rgb(83, 175, 19);  */
+    height: 50px;
+    width: 200px;
+    font-size: 24px;
+}
+.form_title {
+    color: rgb(83, 175, 19);
+    font-size: 24px;
+    width: 280px;
+    text-align: center;
+}
+#fireButton {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: red;
+    color: black;
+    border: 2px solid red;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 0.05s;
+    box-shadow: 0 0 1px rgba(0,0,0) inset, 0 2px 3px rgba(0,0,0) inset, 0 1px 1px rgba(255,255,255,.1);
+   
+}
+table {
+    position: absolute; 
+    left: 173px;
+    top: 98px;
+    border-spacing: 0px;
+} 
+td {
+    width: 94px;
+    height: 94px;
+    /* border: 2px solid #fff; */
+} 
+.hit {
+    background: url("img/ship.png") no-repeat center center;
+}
+.miss {
+    background: url("img/miss.png") no-repeat center center;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+

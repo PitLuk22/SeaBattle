@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SeaBattle</title>
+</head>
+<body>
+    <div class='string hide'>
+        <div class="marquee">
+            <img src="img/medal.png" class="medal">
+            <strong class="winner">Победа</strong>
+            <img src="img/medal.png" class="medal">
+        </div>
+    </div>
+    <div class="board">
+        <div class="out">
+            <div class="messageArea"></div>
+            <img src="img/prize.png" class="win hide" alt="prize" width="100px" height="100px">  
+        </div>
+        
+        <table>
+            <tr>
+                <td id="00" class="squere"></td>
+                <td id="01" class="squere"></td>
+                <td id="02" class="squere"></td>
+                <td id="03" class="squere"></td>
+                <td id="04" class="squere"></td>
+                <td id="05" class="squere"></td>
+                <td id="06" class="squere"></td>
+            </tr>
+            <tr>
+                <td id="10" class="squere"></td>
+                <td id="11" class="squere"></td>
+                <td id="12" class="squere"></td>
+                <td id="13" class="squere"></td>
+                <td id="14" class="squere"></td>
+                <td id="15" class="squere"></td>
+                <td id="16" class="squere"></td>
+            </tr>
+            <tr>
+                <td id="20" class="squere"></td>
+                <td id="21" class="squere"></td>
+                <td id="22" class="squere"></td>
+                <td id="23" class="squere"></td>
+                <td id="24" class="squere"></td>
+                <td id="25" class="squere"></td>
+                <td id="26" class="squere"></td>
+            </tr>
+            <tr>
+                <td id="30" class="squere"></td>
+                <td id="31" class="squere"></td>
+                <td id="32" class="squere"></td>
+                <td id="33" class="squere"></td>
+                <td id="34" class="squere"></td>
+                <td id="35" class="squere"></td>
+                <td id="36" class="squere"></td>
+            </tr>
+            <tr>
+                <td id="40" class="squere"></td>
+                <td id="41" class="squere"></td>
+                <td id="42" class="squere"></td>
+                <td id="43" class="squere"></td>
+                <td id="44" class="squere"></td>
+                <td id="45" class="squere"></td>
+                <td id="46" class="squere"></td>
+            </tr>
+            <tr>
+                <td id="50" class="squere"></td>
+                <td id="51" class="squere"></td>
+                <td id="52" class="squere"></td>
+                <td id="53" class="squere"></td>
+                <td id="54" class="squere"></td>
+                <td id="55" class="squere"></td>
+                <td id="56" class="squere"></td>
+            </tr>
+            <tr>
+                <td id="60" class="squere"></td>
+                <td id="61" class="squere"></td>
+                <td id="62" class="squere"></td>
+                <td id="63" class="squere"></td>
+                <td id="64" class="squere"></td>
+                <td id="65" class="squere"></td>
+                <td id="66" class="squere"></td>
+            </tr>
+        </table>
+        <form>
+            <p class="form_title">Для совершения авиаудара, введите координаты:</p>
+            <input type="text" id="guessInput" placeholder="A0">
+                     
+            <input type="button" id="fireButton" value="FIRE">
+            
+        </form>
+    </div>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="js/btn.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
